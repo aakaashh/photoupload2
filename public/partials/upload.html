@@ -1,0 +1,54 @@
+<div class="container">
+    <h2 class="center">Upload</h2>
+    <h4 class="center"><a href="/#/">Home</a></h4>
+
+    <div>
+        <h5>Select an image of 1024px * 1024px dimensions. Then select the crop area horizontal, vertical, horizontal small, gallery configurations and submit.</h5>
+        <form name='fileForm'>
+	       <input type='file' name='file' ng-file-select >
+        </form>
+    </div>
+
+<div ng-show="show">
+<div ng-controller='ImageCtrl1' class="each-img2">
+	<div>
+        <h3> 755px * 450px Horizontal </h3>
+		<div ng-jcrop="obj.src" selection="obj.selection" ng-jcrop-config-name="config1" thumbnail="obj.thumbnail"></div>
+    </div>
+</div>
+
+<div ng-controller='ImageCtrl2' class="each-img2">
+	<div>
+		<h3> 365px * 450px Vertical </h3>
+    	<div ng-jcrop="obj.src" selection="obj.selection" ng-jcrop-config-name="config2" thumbnail="obj.thumbnail"></div>
+    </div>
+</div>
+
+<div ng-controller='ImageCtrl3' class="each-img2">
+    <div>
+        <h3> 365px * 212px Horizontal Small </h3>
+        <div ng-jcrop="obj.src" selection="obj.selection" ng-jcrop-config-name="config3" thumbnail="obj.thumbnail"></div>
+    </div>
+</div>
+
+<div ng-controller='ImageCtrl4' class="each-img2">
+    <div>
+        <h3> 380px * 380px Gallery </h3>
+        <div ng-jcrop="obj.src" selection="obj.selection" ng-jcrop-config-name="config4" thumbnail="obj.thumbnail"></div>
+    </div>
+</div>
+
+
+<div ng-controller="submitCtrl" class="button-div">
+	<div ng-show="progress">
+        <div class="file" ng-repeat="eachImageSelection in  imageSelection">
+            <h5>{{eachImageSelection[4]}}px * {{eachImageSelection[5]}}px</h5>
+            <div>{{eachImageSelection.status}}</div>
+            <div>{{eachImageSelection.result}}</div>
+        </div>
+    </div>
+    <button ng-click="upload()" class="btn btn-primary btn-md">Submit</button>    
+</div>
+</div>
+
+</div>

@@ -1,0 +1,47 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.ng-jcrop-image-wrapper { display: inline-block; }
+.ng-jcrop-thumbnail-wrapper { display: inline-block; }
+
+.width1000{
+	min-width: 960px;
+}
+.each-img, .each-img1{
+	padding-bottom: 30px;
+}
+.each-img img{
+	width:200px;
+	height: 200px;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+h2, h4{
+	padding-bottom: 20px;
+}
+.center{
+	text-align: center;
+}
+
+.each-img2{
+	padding-top: 30px;
+}
+.preview{
+	padding-bottom: 0px;
+}
+.button-div{
+	padding: 30px 0px;
+}
+.file h5, .file div{
+	display: inline;
+}
+.file{
+	padding: 5px 0;
+}

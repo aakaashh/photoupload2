@@ -1,0 +1,24 @@
+doctype html
+html(ng-app='PhotoApp')
+  head
+    title= "Image handler"
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/bower_components/jquery/dist/jquery.js")
+    script(src="/bower_components/angular/angular.js")
+    script(src="/bower_components/angular-animate/angular-animate.js")
+    script(src="/bower_components/angular-route/angular-route.js")
+    script(src="/bower_components/angular-resource/angular-resource.js")
+    script(src='/javascripts/photos-ang.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    script(src='javascripts/upload.js')
+    link(rel='stylesheet', href='/bower_components/jcrop/css/jquery.Jcrop.css')
+    script(src="/bower_components/jcrop/js/jquery.Jcrop.js")
+    script(src="/bower_components/ng-jcrop/ng-jcrop.js")
+    script(src="/bower_components/lodash/lodash.js")
+    script(src="/bower_components/cloudinary-core/cloudinary-core.js")
+    script(src="/bower_components/ng-file-upload/ng-file-upload-shim.js")
+    script(src="/bower_components/cloudinary_ng/js/angular.cloudinary.js")
+    script(src="/bower_components/ng-file-upload/ng-file-upload.js")
+
+  body
+    block content
